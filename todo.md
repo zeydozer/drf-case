@@ -26,7 +26,7 @@ Django REST Framework ile mikroservis mimarisine yakın modüler bir yapı kurar
 
 ---
 
-## 🧱 Teknik Yığın
+## 🧱 Teknolojiler
 
 | Katman          | Teknoloji                  |
 | --------------- | -------------------------- |
@@ -42,22 +42,22 @@ Django REST Framework ile mikroservis mimarisine yakın modüler bir yapı kurar
 
 ### 1. Kurulum ve Konfigürasyon
 
-* [ ] Django + DRF kurulumu
+* [x] Django + DRF kurulumu
 * [ ] PostgreSQL bağlantısı
 * [ ] Redis bağlantısı
 
 ### 2. Flight Uygulaması
 
-* [ ] Model, Serializer, ViewSet, URL
-* [ ] Status değişikliği ile signal tetikleme
+* [x] Model, Serializer, ViewSet, URL
+* [x] Status değişikliği ile signal tetikleme
 
 ### 3. Crew Uygulaması
 
-* [ ] Model, Serializer, ViewSet, URL
+* [x] Model, Serializer, ViewSet, URL
 
 ### 4. Notification Uygulaması
 
-* [ ] Signal dinleyici + Celery task
+* [x] Signal dinleyici + Celery task
 * [ ] “delayed” flight olduğunda mesaj/log üret
 
 ### 5. Docker ve Deploy
