@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import CrewMember
+from .serializers import CrewMemberSerializer
 
-# Create your views here.
+class CrewMemberViewSet(viewsets.ModelViewSet):
+    queryset = CrewMember.objects.all()
+    serializer_class = CrewMemberSerializer

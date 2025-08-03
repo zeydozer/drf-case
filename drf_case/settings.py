@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'flights',
     'crew',
+    'notifications',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Celery Configuration
+# Geliştirme için basit memory broker kullanıyoruz
+CELERY_BROKER_URL = 'memory://'
+CELERY_RESULT_BACKEND = 'db+sqlite:///celery_results.sqlite'
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'UTC'
