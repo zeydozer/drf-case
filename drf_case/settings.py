@@ -157,40 +157,14 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'UTC'
 
-LOGGING = {
-  'version': 1,
-  'disable_existing_loggers': False,
-  'formatters': {
-    'default': {
-      'format': '[{asctime}] {levelname} {name} - {message}',
-      'style': '{',
-    },
-  },
-  'handlers': {
-    'console': {
-      'class': 'logging.StreamHandler',
-      'formatter': 'default',
-      'stream': sys.stdout,
-    },
-    'file': {
-      'class': 'logging.FileHandler',
-      'filename': os.path.join(BASE_DIR, 'flightops.log'),
-      'formatter': 'default',
-      'encoding': 'utf-8',
-    },
-  },
-  'loggers': {
-    'django': {
-      'handlers': ['console', 'file'],
-      'level': 'INFO',
-    },
-    'flights': {
-      'handlers': ['console', 'file'],
-      'level': 'INFO',
-      'propagate': False,
-    },
-  },
-}
+# Production için basit logging konfigürasyonu
+LOGGING_CONFIG = None
+import logging.config
+logging.basicConfig(
+  level=logging.INFO,
+  format='[%(asctime)s] %(levelname)s %(name)s - %(message)s',
+  handlers=[logging.StreamHandler()]
+)
 
 REST_FRAMEWORK = {
   'PAGE_SIZE': 5,

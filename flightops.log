@@ -1091,3 +1091,195 @@
 [2025-08-04 12:15:00,782] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
 [2025-08-04 12:15:27,321] INFO django.utils.autoreload - /app/drf_case/settings.py changed, reloading.
 [2025-08-04 12:15:28,547] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:15:31,305] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:15:31,307] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:16:01,818] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:16:01,819] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:16:32,325] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:16:32,326] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:17:02,851] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:17:02,851] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:17:33,353] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:17:33,354] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:18:03,851] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 12:18:03,852] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:18:34,346] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:18:34,347] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:19:04,846] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:19:04,847] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:19:35,387] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:19:35,387] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:20:05,888] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:20:05,889] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:20:36,382] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:20:36,383] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:21:06,888] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:21:06,888] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:21:37,392] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:21:37,393] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:22:07,921] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:22:07,922] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:22:38,409] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:22:38,411] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:23:08,919] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 12:23:08,920] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:23:39,406] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:23:39,407] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:24:09,984] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:24:09,985] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:24:40,526] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:24:40,527] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:25:11,037] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:25:11,039] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:25:41,546] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:25:41,547] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:26:12,050] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:26:12,051] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:26:42,546] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:26:42,547] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:27:13,051] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:27:13,052] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:27:43,584] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:27:43,585] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:28:14,101] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 12:28:14,102] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:28:44,605] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:28:44,606] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:29:15,145] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:29:15,146] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:29:45,637] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:29:45,638] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:30:16,154] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:30:16,155] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:30:46,702] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:30:46,703] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:31:17,190] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:31:17,191] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:31:47,733] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:31:47,734] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:32:18,234] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:32:18,235] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:32:48,719] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:32:48,720] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:33:19,240] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 12:33:19,240] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:33:49,760] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:33:49,761] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:34:20,282] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:34:20,283] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:34:50,858] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:34:50,859] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:35:21,366] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:35:21,367] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:35:51,853] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:35:51,854] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:36:22,383] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:36:22,383] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:36:52,873] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:36:52,874] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:37:23,435] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:37:23,437] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:37:53,957] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:37:53,958] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:38:24,520] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 12:38:24,521] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:38:55,013] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:38:55,014] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:39:25,503] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:39:25,504] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:39:56,034] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:39:56,035] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:40:26,557] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:40:26,558] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:40:57,079] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:40:57,080] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:41:27,608] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:41:27,610] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:41:58,156] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:41:58,157] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:42:06,592] INFO django.utils.autoreload - /app/drf_case/urls.py changed, reloading.
+[2025-08-04 12:42:08,018] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:42:12,907] INFO django.utils.autoreload - /app/drf_case/urls.py changed, reloading.
+[2025-08-04 12:42:14,058] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:42:28,698] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:42:28,699] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:42:59,349] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:42:59,350] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:43:29,912] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 12:43:29,913] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:44:00,465] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:44:00,465] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:44:30,997] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:44:30,998] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:45:01,501] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:45:01,502] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:45:32,039] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:45:32,040] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:46:02,616] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:46:02,617] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:46:33,163] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:46:33,164] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:47:03,698] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:47:03,699] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:47:34,264] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:47:34,265] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:48:08,806] ERROR django.request - Internal Server Error: /api/flights/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error -2 connecting to redis:6379. Name or service not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/flights/views.py", line 93, in list
+    data = cache.get(cache_key)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/usr/local/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/redis/commands/core.py", line 1829, in get
+    return self.execute_command("GET", name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/redis/client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/redis/connection.py", line 1096, in get_connection
+    connection.connect()
+  File "/usr/local/lib/python3.12/site-packages/redis/connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error -2 connecting to redis:6379. Name or service not known.
+[2025-08-04 12:48:08,813] ERROR django.server - "GET /api/flights/ HTTP/1.1" 500 131509

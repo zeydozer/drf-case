@@ -63,4 +63,4 @@ Django REST Framework ile mikroservis mimarisine yakın modüler bir yapı kurar
 ### 5. Docker ve Deploy
 
 * [x] Dockerfile & docker-compose.yml
-* [ ] Gunicorn & Nginx konfigürasyonu
+* [x] Gunicorn & Nginx konfigürasyonu
