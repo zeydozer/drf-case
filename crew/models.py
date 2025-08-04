@@ -14,3 +14,8 @@ class CrewMember(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.role})"
+
+    class Meta:
+        verbose_name = 'Crew Member'
+        verbose_name_plural = 'Crew Members'
+        ordering = ['name']
