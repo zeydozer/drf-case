@@ -43,8 +43,8 @@ Django REST Framework ile mikroservis mimarisine yakın modüler bir yapı kurar
 ### 1. Kurulum ve Konfigürasyon
 
 * [x] Django + DRF kurulumu
-* [ ] PostgreSQL bağlantısı
-* [ ] Redis bağlantısı
+* [x] PostgreSQL bağlantısı
+* [x] Redis bağlantısı
 
 ### 2. Flight Uygulaması
 
@@ -58,9 +58,9 @@ Django REST Framework ile mikroservis mimarisine yakın modüler bir yapı kurar
 ### 4. Notification Uygulaması
 
 * [x] Signal dinleyici + Celery task
-* [ ] “delayed” flight olduğunda mesaj/log üret
+* [x] “delayed” flight olduğunda mesaj/log üret
 
 ### 5. Docker ve Deploy
 
-* [ ] Dockerfile & docker-compose.yml
+* [x] Dockerfile & docker-compose.yml
 * [ ] Gunicorn & Nginx konfigürasyonu

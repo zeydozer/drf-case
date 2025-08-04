@@ -8,19 +8,60 @@ Django REST Framework kullanılarak geliştirilmiş basit bir uçuş yönetim si
 - **Mürettebat Yönetimi**: Pilot, co-pilot ve kabin görevlilerinin uçuşlara atanması
 - **Bildirim Sistemi**: Celery ile asenkron uçuş gecikme bildirimleri
 - **REST API**: Django REST Framework ile tam API desteği
+- **Docker Desteği**: Geliştirme ve production ortamları için Docker konfigürasyonu
 
 ## Teknolojiler
 
 - Django 5.2.4
 - Django REST Framework
 - Celery (Asenkron görevler)
-- SQLite (Veritabanı)
+- PostgreSQL (Production) / SQLite (Development)
+- Redis (Celery broker)
+- Docker & Docker Compose
 
-## Kurulum
+## Docker ile Kurulum (Önerilen)
+
+1. **Projeyi klonlayın:**
+   ```bash
+   git clone <repository-url>
+   cd drf_case
+   ```
+
+2. **Docker ile çalıştırın:**
+   ```bash
+   # Servisleri başlat
+   docker-compose up -d
+   
+   # Migration'ları çalıştır
+   docker-compose exec web python manage.py migrate
+   
+   # Test verilerini yükle
+   docker-compose exec web python manage.py seed_data
+   ```
+
+3. **Uygulamayı test edin:**
+   - API: http://localhost:8000/api/
+   - Admin: http://localhost:8000/admin/
+
+## Makefile Komutları
+
+```bash
+make build      # Docker image'larını oluştur
+make up         # Servisleri başlat
+make down       # Servisleri durdur
+make logs       # Log'ları görüntüle
+make shell      # Django shell'e bağlan
+make migrate    # Migration'ları çalıştır
+make seed       # Test verilerini yükle
+make reset-db   # Veritabanını sıfırla
+make clean      # Docker temizliği
+```
+
+## Manuel Kurulum
 
 1. **Bağımlılıkları yükleyin:**
    ```bash
-   pip install django djangorestframework celery
+   pip install -r requirements.txt
    ```
 
 2. **Veritabanını hazırlayın:**

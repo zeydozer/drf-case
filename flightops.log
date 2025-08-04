@@ -1,26 +1,78 @@
-[2025-08-04 10:01:45,557] INFO django.utils.autoreload - Watching for file changes with StatReloader
-[2025-08-04 10:01:55,386] WARNING django.request - Not Found: /
-[2025-08-04 10:01:55,387] WARNING django.server - "GET / HTTP/1.1" 404 2453
-[2025-08-04 10:01:55,443] WARNING django.request - Not Found: /favicon.ico
-[2025-08-04 10:01:55,444] WARNING django.server - "GET /favicon.ico HTTP/1.1" 404 2504
-[2025-08-04 10:02:03,470] INFO django.server - "GET /api/crew HTTP/1.1" 301 0
-[2025-08-04 10:02:03,519] INFO django.server - "GET /api/crew/ HTTP/1.1" 200 9322
-[2025-08-04 10:02:03,683] INFO django.server - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
-[2025-08-04 10:02:03,686] INFO django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
-[2025-08-04 10:02:03,689] INFO django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
-[2025-08-04 10:02:03,690] INFO django.server - "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
-[2025-08-04 10:02:03,693] INFO django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
-[2025-08-04 10:02:03,694] INFO django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
-[2025-08-04 10:02:03,696] INFO django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
-[2025-08-04 10:02:03,707] INFO django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
-[2025-08-04 10:02:03,708] INFO django.server - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
-[2025-08-04 10:02:03,711] INFO django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
-[2025-08-04 10:02:03,712] INFO django.server - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
-[2025-08-04 10:02:03,721] INFO django.server - "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
-[2025-08-04 10:02:14,653] WARNING django.request - Not Found: /api/flight/
-[2025-08-04 10:02:14,654] WARNING django.server - "GET /api/flight/ HTTP/1.1" 404 6722
-[2025-08-04 10:02:18,588] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 9979
-[2025-08-04 10:02:33,547] INFO django.server - "OPTIONS /api/flights/ HTTP/1.1" 200 12837
-[2025-08-04 10:02:41,107] INFO django.server - "OPTIONS /api/flights/ HTTP/1.1" 200 12837
-[2025-08-04 10:02:42,544] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 9979
-[2025-08-04 10:05:28,316] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 08:01:27,529] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 08:01:57,707] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 08:01:57,709] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2
+[2025-08-04 08:02:28,257] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 08:02:28,257] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2821
+[2025-08-04 08:02:32,636] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 08:02:32,637] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2821
+[2025-08-04 08:02:46,756] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 08:02:46,789] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 16399
+[2025-08-04 08:02:46,804] INFO django.server - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[2025-08-04 08:02:46,815] INFO django.server - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+[2025-08-04 08:02:46,815] INFO django.server - "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+[2025-08-04 08:02:46,816] INFO django.server - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[2025-08-04 08:02:46,816] INFO django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+[2025-08-04 08:02:46,817] INFO django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+[2025-08-04 08:02:46,823] INFO django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+[2025-08-04 08:02:46,827] INFO django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[2025-08-04 08:02:46,828] INFO django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[2025-08-04 08:02:46,830] INFO django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+[2025-08-04 08:02:46,830] INFO django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+[2025-08-04 08:02:46,830] INFO django.server - "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[2025-08-04 08:02:58,764] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 08:02:58,765] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2821
+[2025-08-04 08:03:09,999] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 08:03:10,006] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 16399
+[2025-08-04 08:03:10,017] INFO django.server - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-08-04 08:03:10,022] INFO django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-08-04 08:03:10,023] INFO django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-08-04 08:03:10,023] INFO django.server - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-08-04 08:03:10,024] INFO django.server - "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-08-04 08:03:10,025] INFO django.server - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-08-04 08:03:10,027] INFO django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-08-04 08:03:10,028] INFO django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-08-04 08:03:10,029] INFO django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-08-04 08:03:10,029] INFO django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-08-04 08:03:10,029] INFO django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-08-04 08:03:15,380] INFO django.server - "GET /api/crew/ HTTP/1.1" 200 29896
+[2025-08-04 08:03:15,403] INFO django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+[2025-08-04 08:03:15,405] INFO django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[2025-08-04 08:03:15,405] INFO django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+[2025-08-04 08:03:15,406] INFO django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[2025-08-04 08:03:15,410] INFO django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+[2025-08-04 08:03:15,411] INFO django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+[2025-08-04 08:03:15,411] INFO django.server - "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[2025-08-04 08:03:15,412] INFO django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+[2025-08-04 08:03:29,282] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 08:03:29,283] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2821
+[2025-08-04 08:03:59,797] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 08:03:59,798] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2821
+[2025-08-04 08:04:15,045] INFO django.server - "POST /api/crew/ HTTP/1.1" 201 11436
+[2025-08-04 08:04:15,058] INFO django.server - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-08-04 08:04:15,065] INFO django.server - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-08-04 08:04:15,065] INFO django.server - "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-08-04 08:04:15,065] INFO django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-08-04 08:04:15,067] INFO django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-08-04 08:04:15,067] INFO django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-08-04 08:04:15,068] INFO django.server - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-08-04 08:04:15,069] INFO django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-08-04 08:04:15,070] INFO django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-08-04 08:04:15,072] INFO django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-08-04 08:04:15,073] INFO django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-08-04 08:04:30,063] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 08:04:30,070] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 16399
+[2025-08-04 08:04:30,088] INFO django.server - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[2025-08-04 08:04:30,098] INFO django.server - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[2025-08-04 08:04:30,098] INFO django.server - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[2025-08-04 08:04:30,098] INFO django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[2025-08-04 08:04:30,099] INFO django.server - "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[2025-08-04 08:04:30,099] INFO django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[2025-08-04 08:04:30,104] INFO django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[2025-08-04 08:04:30,105] INFO django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[2025-08-04 08:04:30,106] INFO django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[2025-08-04 08:04:30,106] INFO django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[2025-08-04 08:04:30,106] INFO django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[2025-08-04 08:04:30,347] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 08:04:30,348] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2821
+[2025-08-04 08:04:47,082] INFO flights.views - Yeni uçuş oluşturuldu: TK1026 - Mardin → Madrid
+[2025-08-04 08:04:47,089] INFO django.server - "POST /api/flights/ HTTP/1.1" 201 10309
