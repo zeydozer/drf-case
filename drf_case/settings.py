@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'flights',
     'crew',
     'notifications',
+    'django_filters'
 ]
 
 MIDDLEWARE = [
@@ -189,4 +190,11 @@ LOGGING = {
             'propagate': False,
         },
     },
+}
+
+REST_FRAMEWORK = {
+    'PAGE_SIZE': 5,
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'DEFAULT_RENDERER_CLASSES': ['rest_framework.renderers.JSONRenderer'],
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
 }
