@@ -971,3 +971,123 @@
 [2025-08-04 11:53:08,621] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 135
 [2025-08-04 11:53:39,176] INFO flights.views - ✅ Cache'ten alındı.
 [2025-08-04 11:53:39,177] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 135
+[2025-08-04 11:54:09,693] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 11:54:09,694] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 135
+[2025-08-04 11:54:40,254] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 11:54:40,255] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 135
+[2025-08-04 11:55:10,766] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 11:55:10,767] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 135
+[2025-08-04 11:55:41,266] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 11:55:41,267] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 135
+[2025-08-04 11:56:11,760] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 11:56:11,761] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 135
+[2025-08-04 11:56:42,246] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 11:56:42,246] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 135
+[2025-08-04 11:57:12,745] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 11:57:12,745] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 135
+[2025-08-04 11:57:43,247] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 11:57:43,248] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 11:58:13,733] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 11:58:13,734] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 11:58:44,219] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 11:58:44,219] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 11:59:14,700] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 11:59:14,701] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 11:59:45,238] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 11:59:45,239] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:00:15,886] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:00:15,886] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:00:46,402] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:00:46,403] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:01:16,897] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:01:16,898] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:01:47,397] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:01:47,398] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:02:17,880] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:02:17,881] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:02:48,401] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 12:02:48,402] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:03:18,925] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:03:18,925] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:03:49,439] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:03:49,440] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:04:19,960] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:04:19,961] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:04:50,447] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:04:50,448] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:05:20,932] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:05:20,933] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:05:51,423] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:05:51,423] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:06:21,935] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:06:21,936] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:06:41,664] INFO django.utils.autoreload - /app/flights/models.py changed, reloading.
+[2025-08-04 12:06:43,101] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:06:52,476] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:06:52,478] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:06:53,405] INFO django.utils.autoreload - /app/flights/serializers.py changed, reloading.
+[2025-08-04 12:06:54,610] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:07:15,328] INFO django.utils.autoreload - /app/flights/filters.py changed, reloading.
+[2025-08-04 12:07:16,548] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:07:22,999] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:07:23,000] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:07:50,038] INFO django.utils.autoreload - /app/flights/views.py changed, reloading.
+[2025-08-04 12:07:51,275] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:07:53,521] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 12:07:53,522] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:08:12,128] INFO django.utils.autoreload - /app/flights/urls.py changed, reloading.
+[2025-08-04 12:08:13,310] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:08:24,057] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:08:24,058] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:08:26,829] INFO django.utils.autoreload - /app/crew/models.py changed, reloading.
+[2025-08-04 12:08:28,081] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:08:39,319] INFO django.utils.autoreload - /app/crew/serializers.py changed, reloading.
+[2025-08-04 12:08:40,555] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:08:54,605] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:08:54,606] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:08:57,212] INFO django.utils.autoreload - /app/crew/views.py changed, reloading.
+[2025-08-04 12:08:58,491] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:09:12,919] INFO django.utils.autoreload - /app/drf_case/settings.py changed, reloading.
+[2025-08-04 12:09:14,310] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:09:25,176] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:09:25,177] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:09:27,923] INFO django.utils.autoreload - /app/drf_case/urls.py changed, reloading.
+[2025-08-04 12:09:29,215] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:09:43,541] INFO django.utils.autoreload - /app/drf_case/settings.py changed, reloading.
+[2025-08-04 12:09:44,736] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:09:55,698] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:09:55,699] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:10:26,192] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:10:26,193] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:10:56,718] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:10:56,719] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:11:27,227] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:11:27,228] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:11:57,700] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:11:57,701] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:12:23,455] INFO django.utils.autoreload - /app/flights/views.py changed, reloading.
+[2025-08-04 12:12:24,763] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:12:28,196] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:12:28,197] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:12:58,713] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-04 12:12:58,714] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:13:29,221] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:13:29,222] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:13:49,907] INFO django.utils.autoreload - /app/drf_case/settings.py changed, reloading.
+[2025-08-04 12:13:51,219] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:13:59,745] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:13:59,746] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:14:01,544] INFO django.utils.autoreload - /app/drf_case/settings.py changed, reloading.
+[2025-08-04 12:14:02,800] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:14:09,789] INFO django.utils.autoreload - /app/drf_case/settings.py changed, reloading.
+[2025-08-04 12:14:11,095] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:14:19,248] INFO django.utils.autoreload - /app/drf_case/settings.py changed, reloading.
+[2025-08-04 12:14:20,458] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:14:29,542] INFO django.utils.autoreload - /app/drf_case/settings.py changed, reloading.
+[2025-08-04 12:14:30,775] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:14:40,981] INFO django.utils.autoreload - /app/drf_case/settings.py changed, reloading.
+[2025-08-04 12:14:42,250] INFO django.utils.autoreload - Watching for file changes with StatReloader
+[2025-08-04 12:15:00,781] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-04 12:15:00,782] INFO django.server - "GET /api/flights/ HTTP/1.1" 200 2836
+[2025-08-04 12:15:27,321] INFO django.utils.autoreload - /app/drf_case/settings.py changed, reloading.
+[2025-08-04 12:15:28,547] INFO django.utils.autoreload - Watching for file changes with StatReloader
