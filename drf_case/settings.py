@@ -163,7 +163,10 @@ import logging.config
 logging.basicConfig(
   level=logging.INFO,
   format='[%(asctime)s] %(levelname)s %(name)s - %(message)s',
-  handlers=[logging.StreamHandler()]
+  handlers=[
+    logging.StreamHandler(),
+    logging.FileHandler('/app/logs/flightops.log')
+  ]
 )
 
 REST_FRAMEWORK = {

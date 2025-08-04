@@ -25,7 +25,24 @@ def health_check(request):
   """Simple health check endpoint for load balancer/monitoring"""
   return JsonResponse({"status": "healthy", "service": "drf_case"})
 
+@never_cache
+def home_view(request):
+  """Home page with API information"""
+  return JsonResponse({
+    "message": "Welcome to DRF Case - Flight Operations API",
+    "version": "1.0.0",
+    "endpoints": {
+      "admin": "/admin/",
+      "api_flights": "/api/flights/",
+      "api_crew": "/api/crew/",
+      "health": "/health/"
+    },
+    "domain": "drf.kuzeyyedekparca.com",
+    "status": "running"
+  })
+
 urlpatterns = [
+  path('', home_view, name='home'),
   path('admin/', admin.site.urls),
   path('api/', include('flights.urls')),
   path('api/', include('crew.urls')),
