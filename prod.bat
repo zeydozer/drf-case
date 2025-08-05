@@ -11,19 +11,19 @@ if "%2"=="prod" (
 )
 
 if "%1"=="up" (
-  echo Starting production services...
+  echo Starting services...
   docker-compose -f %CONFIG_FILE% up --build -d
   goto :eof
 )
 
 if "%1"=="down" (
-  echo Stopping production services...
+  echo Stopping services...
   docker-compose -f %CONFIG_FILE% down -v
   goto :eof
 )
 
 if "%1"=="logs" (
-  echo Showing production logs...
+  echo Showing logs...
   docker-compose -f %CONFIG_FILE% logs -f
   goto :eof
 )
@@ -67,16 +67,25 @@ if "%1"=="test" (
   goto :eof
 )
 
+if "%1"=="data" (
+  echo Seeding initial data...
+  docker-compose -f %CONFIG_FILE% exec web python manage.py makemigrations
+  docker-compose -f %CONFIG_FILE% exec web python manage.py migrate
+  docker-compose -f %CONFIG_FILE% exec web python manage.py seed_all_data
+  goto :eof
+)
+
 REM Help
 echo.
-echo Production deployment commands:
+echo Deployment commands:
 echo.
-echo   prod.bat up            - Start production services
-echo   prod.bat down          - Stop production services
+echo   prod.bat up            - Start services
+echo   prod.bat down          - Stop services
 echo   prod.bat logs          - Show logs
 echo   prod.bat restart       - Restart web and nginx services
 echo   prod.bat status        - Check service status
 echo   prod.bat health        - Check health endpoint
 echo   prod.bat cleancache    - Clear Python cache files (__pycache__, .pyc, .pyo)
 echo   prod.bat test          - Run tests
+echo   prod.bat data          - Seed initial data
 echo.

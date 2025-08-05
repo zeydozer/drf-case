@@ -145,3 +145,418 @@
 [2025-08-05 15:17:20,587] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
 [2025-08-05 15:17:20,593] INFO drf_case.middleware - 📡 PUT /api/crew/24/ from 127.0.0.1 took 0.01s
 [2025-08-05 15:17:36,387] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 15:41:24,197] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:41:54,974] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 15:42:25,764] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 15:42:31,673] INFO drf_case.middleware - 📡 GET /dispatch.asp from 172.18.0.7 took 0.01s
+[2025-08-05 15:42:31,675] WARNING django.request - Not Found: /dispatch.asp
+[2025-08-05 15:42:38,351] INFO drf_case.middleware - 📡 GET /health/ from 172.18.0.7 took 0.27s
+[2025-08-05 15:42:56,262] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:42:58,051] INFO drf_case.middleware - 📡 GET / from 172.18.0.7 took 0.28s
+[2025-08-05 15:42:58,377] INFO drf_case.middleware - 📡 GET /favicon.ico from 172.18.0.7 took 0.28s
+[2025-08-05 15:42:58,378] WARNING django.request - Not Found: /favicon.ico
+[2025-08-05 15:43:03,628] ERROR django.request - Internal Server Error: /api/token/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "users_user" does not exist
+LINE 1: ...", "users_user"."email", "users_user"."role" FROM "users_use...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 73, in validate
+    data = super().validate(attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 54, in validate
+    self.user = authenticate(**authenticate_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "users_user" does not exist
+LINE 1: ...", "users_user"."email", "users_user"."role" FROM "users_use...
+                                                             ^
+
+[2025-08-05 15:43:03,633] INFO drf_case.middleware - 📡 POST /api/token/ from 172.18.0.7 took 0.37s
+[2025-08-05 15:43:21,003] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.26s
+[2025-08-05 15:43:21,005] WARNING django.request - Unauthorized: /api/token/
+[2025-08-05 15:43:21,555] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 15:43:22,087] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:22,090] INFO drf_case.middleware - 📡 POST /api/token/refresh/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:22,669] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.30s
+[2025-08-05 15:43:22,942] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:23,215] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:23,487] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:26,763] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:30,469] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.26s
+[2025-08-05 15:43:30,474] INFO flights.views - Yeni uçuş oluşturuldu: TK9999 - İzmir → Madrid
+[2025-08-05 15:43:30,477] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 15:43:31,557] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:31,562] INFO flights.views - Yeni uçuş oluşturuldu: TK8888 - Antalya → Rome
+[2025-08-05 15:43:31,563] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:32,637] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.26s
+[2025-08-05 15:43:32,641] INFO flights.views - Yeni uçuş oluşturuldu: TK7777 - Ankara → Vienna
+[2025-08-05 15:43:32,642] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:33,714] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:33,721] INFO flights.views - Uçuş silindi: TK0000 - Test Origin → Test Destination
+[2025-08-05 15:43:33,724] INFO drf_case.middleware - 📡 DELETE /api/flights/16/ from 127.0.0.1 took 0.01s
+[2025-08-05 15:43:34,800] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.26s
+[2025-08-05 15:43:34,806] INFO drf_case.middleware - 📡 GET /api/flights/17/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:35,899] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 15:43:35,903] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 15:43:35,909] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 15:43:37,007] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:37,010] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 15:43:37,014] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 15:43:38,096] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:38,099] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 15:43:38,103] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 15:43:39,197] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:39,201] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-05 15:43:39,202] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:40,011] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:40,011] WARNING django.request - Unauthorized: /api/flights/
+[2025-08-05 15:43:41,077] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:41,080] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 15:43:41,084] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 15:43:42,174] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:42,211] INFO flights.views - Uçuş güncellendi: TK1234 - Ankara → Berlin
+[2025-08-05 15:43:42,212] INFO drf_case.middleware - 📡 PUT /api/flights/38/ from 127.0.0.1 took 0.04s
+[2025-08-05 15:43:43,290] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:43,296] INFO drf_case.middleware - 📡 GET /api/flights/41/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:44,448] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:44,453] INFO drf_case.middleware - 📡 POST /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:45,533] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:45,538] INFO drf_case.middleware - 📡 POST /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:46,676] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:46,681] INFO drf_case.middleware - 📡 DELETE /api/crew/11/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:47,755] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:47,760] INFO drf_case.middleware - 📡 GET /api/crew/12/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:48,833] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:48,839] INFO drf_case.middleware - 📡 GET /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:49,914] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:49,920] INFO drf_case.middleware - 📡 GET /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:51,011] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:51,016] INFO drf_case.middleware - 📡 GET /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:51,844] INFO drf_case.middleware - 📡 GET /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:51,844] WARNING django.request - Unauthorized: /api/crew/
+[2025-08-05 15:43:52,926] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:52,930] INFO drf_case.middleware - 📡 POST /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:52,931] WARNING django.request - Bad Request: /api/crew/
+[2025-08-05 15:43:54,028] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:43:54,034] INFO drf_case.middleware - 📡 PUT /api/crew/24/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:43:57,516] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:44:20,268] ERROR django.request - Internal Server Error: /api/token/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "users_user" does not exist
+LINE 1: ...", "users_user"."email", "users_user"."role" FROM "users_use...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 73, in validate
+    data = super().validate(attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 54, in validate
+    self.user = authenticate(**authenticate_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "users_user" does not exist
+LINE 1: ...", "users_user"."email", "users_user"."role" FROM "users_use...
+                                                             ^
+
+[2025-08-05 15:44:20,273] INFO drf_case.middleware - 📡 POST /api/token/ from 172.18.0.7 took 0.34s
+[2025-08-05 15:44:28,361] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.29s
+[2025-08-05 15:44:59,183] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 15:46:53,762] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:47:24,503] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.25s
+[2025-08-05 15:47:55,237] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
+[2025-08-05 15:48:25,976] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
+[2025-08-05 15:48:34,294] INFO drf_case.middleware - 📡 GET / from 172.18.0.7 took 0.25s
+[2025-08-05 15:48:56,560] INFO drf_case.middleware - 📡 GET /health/ from 172.18.0.7 took 0.26s
+[2025-08-05 15:48:56,743] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 15:49:10,485] ERROR django.request - Internal Server Error: /api/token/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "users_user" does not exist
+LINE 1: ...", "users_user"."email", "users_user"."role" FROM "users_use...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 46, in post
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 73, in validate
+    data = super().validate(attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 54, in validate
+    self.user = authenticate(**authenticate_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/auth/base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "users_user" does not exist
+LINE 1: ...", "users_user"."email", "users_user"."role" FROM "users_use...
+                                                             ^
+
+[2025-08-05 15:49:10,489] INFO drf_case.middleware - 📡 POST /api/token/ from 172.18.0.7 took 0.36s
+[2025-08-05 15:49:27,543] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.29s
+[2025-08-05 15:49:58,028] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:50:28,807] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 15:50:40,003] INFO drf_case.middleware - 📡 POST /api/token/ from 172.18.0.7 took 0.54s
+[2025-08-05 15:50:40,004] WARNING django.request - Unauthorized: /api/token/
+[2025-08-05 15:50:59,578] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:51:30,086] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 15:51:53,887] INFO drf_case.middleware - 📡 GET / from 172.18.0.7 took 0.27s
+[2025-08-05 15:53:41,655] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
+[2025-08-05 15:54:12,422] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:54:31,835] INFO drf_case.middleware - 📡 POST /api/token/ from 172.18.0.7 took 0.58s
+[2025-08-05 15:54:43,204] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:55:13,990] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.29s
+[2025-08-05 15:55:44,749] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:56:15,553] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.29s
+[2025-08-05 15:56:46,408] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.29s
+[2025-08-05 15:56:57,400] INFO drf_case.middleware - 📡 GET / from 172.18.0.7 took 0.28s
+[2025-08-05 15:57:17,165] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:57:47,933] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
+[2025-08-05 15:58:11,975] INFO drf_case.middleware - 📡 GET / from 172.18.0.7 took 0.27s
+[2025-08-05 15:58:18,738] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:58:49,504] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 15:59:20,293] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 15:59:50,801] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 16:00:21,591] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 16:00:24,382] INFO drf_case.middleware - 📡 GET /login.rsp from 172.18.0.7 took 0.01s
+[2025-08-05 16:00:24,383] WARNING django.request - Not Found: /login.rsp
+[2025-08-05 16:00:52,106] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 16:00:59,484] INFO drf_case.middleware - 📡 POST /api/token/ from 172.18.0.7 took 0.56s
+[2025-08-05 16:01:02,776] INFO drf_case.middleware - 📡 POST /api/token/ from 172.18.0.7 took 0.54s
+[2025-08-05 16:01:22,881] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.29s

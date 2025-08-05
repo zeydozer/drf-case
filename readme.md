@@ -22,6 +22,9 @@ prod.bat test
 
 # Health check
 prod.bat health
+
+# Seed data
+prod.bat data
 ```
 
 ## API Endpoints

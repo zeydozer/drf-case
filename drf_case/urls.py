@@ -13,16 +13,16 @@ def health_check(request):
 def home_view(request):
   """Home page with API information"""
   return JsonResponse({
-  "message": "Welcome to DRF Case - Flight Operations API",
-  "version": "1.0.0",
-  "endpoints": {
-    "admin": "/admin/",
-    "api_flights": "/api/flights/",
-    "api_crew": "/api/crew/",
-    "health": "/health/"
-  },
-  "domain": "drf.kuzeyyedekparca.com",
-  "status": "running"
+    "message": "Welcome to DRF Case - Flight Operations API",
+    "version": "1.0.0",
+    "endpoints": {
+      "admin": "/admin/",
+      "api_flights": "/api/flights/",
+      "api_crew": "/api/crew/",
+      "health": "/health/"
+    },
+    "domain": "drf.kuzeyyedekparca.com",
+    "status": "running"
   })
 
 urlpatterns = [
