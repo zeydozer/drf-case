@@ -1,23 +1,23 @@
 ```bash
-# Servisleri başlat (build ile birlikte)
+# Start services (with build)
 prod.bat up
 
-# Servisleri durdur (volumes ile birlikte)
+# Stop services (including volumes)
 prod.bat down
 
-# Servisleri yeniden başlat
+# Restart services
 prod.bat restart
 
-# Servis durumunu kontrol et
+# Check service status
 prod.bat status
 
-# Logları görüntüle
+# Show logs
 prod.bat logs
 
-# Cache temizle
+# Clear cache
 prod.bat cleancache
 
-# Testleri çalıştır
+# Run tests
 prod.bat test
 
 # Health check
@@ -27,10 +27,10 @@ prod.bat health
 ## API Endpoints
 
 - **Users:** `/api/users/`
-- **Flights:** `/api/flights/`  
+- **Flights:** `/api/flights/`
 - **Crew:** `/api/crew/`
 
-## Teknolojiler
+## Technologies
 
 - Django REST Framework
 - PostgreSQL
