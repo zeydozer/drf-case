@@ -5,13 +5,13 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('crew', '0001_initial'),
-    ]
+  dependencies = [
+    ('crew', '0001_initial'),
+  ]
 
-    operations = [
-        migrations.AlterModelOptions(
-            name='crewmember',
-            options={'ordering': ['name'], 'verbose_name': 'Crew Member', 'verbose_name_plural': 'Crew Members'},
-        ),
-    ]
+  operations = [
+    migrations.AlterModelOptions(
+      name='crewmember',
+      options={'ordering': ['name'], 'verbose_name': 'Crew Member', 'verbose_name_plural': 'Crew Members'},
+    ),
+  ]

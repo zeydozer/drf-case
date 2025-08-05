@@ -6,5 +6,5 @@ router = DefaultRouter()
 router.register(r'crew', CrewMemberViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+  path('', include(router.urls)),
 ]

@@ -5,21 +5,21 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    initial = True
+  initial = True
 
-    dependencies = [
-    ]
+  dependencies = [
+  ]
 
-    operations = [
-        migrations.CreateModel(
-            name='Flight',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('flight_number', models.CharField(max_length=10, unique=True)),
-                ('origin', models.CharField(max_length=100)),
-                ('destination', models.CharField(max_length=100)),
-                ('scheduled_time', models.DateTimeField()),
-                ('status', models.CharField(choices=[('planned', 'Planned'), ('delayed', 'Delayed'), ('departed', 'Departed'), ('landed', 'Landed')], default='planned', max_length=20)),
-            ],
-        ),
-    ]
+  operations = [
+    migrations.CreateModel(
+      name='Flight',
+      fields=[
+        ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+        ('flight_number', models.CharField(max_length=10, unique=True)),
+        ('origin', models.CharField(max_length=100)),
+        ('destination', models.CharField(max_length=100)),
+        ('scheduled_time', models.DateTimeField()),
+        ('status', models.CharField(choices=[('planned', 'Planned'), ('delayed', 'Delayed'), ('departed', 'Departed'), ('landed', 'Landed')], default='planned', max_length=20)),
+      ],
+    ),
+  ]
