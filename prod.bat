@@ -72,6 +72,21 @@ if "%1"=="health" (
   goto :eof
 )
 
+if "%1"=="cleancache" (
+  echo Clearing Python cache files...
+  echo Removing __pycache__ directories...
+  for /d /r %%d in (__pycache__) do @if exist "%%d" rd /s /q "%%d"
+  echo Removing .pyc files...
+  for /r %%f in (*.pyc) do @if exist "%%f" del /q "%%f"
+  echo Removing .pyo files...
+  for /r %%f in (*.pyo) do @if exist "%%f" del /q "%%f"
+  echo Removing Celery cache files...
+  if exist celery_results.sqlite del /q celery_results.sqlite
+  if exist celerybeat-schedule del /q celerybeat-schedule
+  echo Cache cleanup completed!
+  goto :eof
+)
+
 REM Help
 echo.
 echo Production deployment commands:
@@ -87,4 +102,5 @@ echo   prod.bat restart       - Restart web and nginx services
 echo   prod.bat shell         - Open Django shell
 echo   prod.bat status        - Check service status
 echo   prod.bat health        - Check health endpoint
+echo   prod.bat cleancache    - Clear Python cache files (__pycache__, .pyc, .pyo)
 echo.
