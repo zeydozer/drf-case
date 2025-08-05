@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
   email = models.EmailField(unique=True)
-  # Diğer alanlarınızı ekleyebilirsiniz
+  role = models.CharField(max_length=20, default='viewer')  # viewer, staff, admin
 
   REQUIRED_FIELDS = ['email']
   USERNAME_FIELD = 'username'
