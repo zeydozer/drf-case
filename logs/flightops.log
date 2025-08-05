@@ -584,3 +584,19 @@ LINE 1: ...", "users_user"."email", "users_user"."role" FROM "users_use...
 [2025-08-05 16:10:34,276] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
 [2025-08-05 16:11:04,799] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
 [2025-08-05 16:11:35,552] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
+[2025-08-05 16:21:19,762] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.33s
+[2025-08-05 16:21:50,577] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.29s
+[2025-08-05 16:21:51,419] INFO drf_case.middleware - 📡 GET /health/ from 172.18.0.8 took 0.29s
+[2025-08-05 16:22:21,136] INFO drf_case.middleware - 📡 GET / from 172.18.0.8 took 0.31s
+[2025-08-05 16:22:21,421] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.32s
+[2025-08-05 16:22:39,646] INFO drf_case.middleware - 📡 GET /api/flights/ from 172.18.0.8 took 0.39s
+[2025-08-05 16:22:39,648] WARNING django.request - Unauthorized: /api/flights/
+[2025-08-05 16:22:40,008] INFO drf_case.middleware - 📡 GET /api/flights/ from 172.18.0.8 took 0.35s
+[2025-08-05 16:22:40,009] WARNING django.request - Unauthorized: /api/flights/
+[2025-08-05 16:22:52,306] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.34s
+[2025-08-05 16:23:12,932] INFO drf_case.middleware - 📡 POST /api/token/ from 172.18.0.8 took 0.28s
+[2025-08-05 16:23:12,988] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-05 16:23:12,989] INFO drf_case.middleware - 📡 GET /api/flights/ from 172.18.0.8 took 0.05s
+[2025-08-05 16:23:13,054] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-05 16:23:13,055] INFO drf_case.middleware - 📡 GET /api/flights/ from 172.18.0.8 took 0.06s
+[2025-08-05 16:23:23,061] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
