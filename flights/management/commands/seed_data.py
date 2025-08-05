@@ -35,6 +35,12 @@ class Command(BaseCommand):
     ]
 
     statuses = ['planned', 'delayed', 'departed', 'landed']
+
+    airlines = [
+      'Turkish Airlines', 'Pegasus Airlines', 'SunExpress', 'AnadoluJet', 'AtlasGlobal'
+    ]
+
+    gates = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
     
     # Create flights
     flights = []
@@ -56,13 +62,17 @@ class Command(BaseCommand):
       )
       
       status = random.choice(statuses)
+      airline = random.choice(airlines)
+      gate = random.choice(gates) if random.choice([True, False]) else None
       
       flight = Flight.objects.create(
         flight_number=flight_number,
         origin=origin,
         destination=destination,
         scheduled_time=scheduled_time,
-        status=status
+        status=status,
+        airline=airline,
+        gate=gate
       )
       flights.append(flight)
     

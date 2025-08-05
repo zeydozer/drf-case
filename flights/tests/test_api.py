@@ -39,7 +39,9 @@ class FlightAPITest(APITestCase):
       "origin": "Ankara",
       "destination": "Berlin",
       "scheduled_time": timezone.now() + timedelta(hours=2),
-      "status": "planned"
+      "status": "planned",
+      "airline": "Turkish Airlines",
+      "gate": "A1"
     }
     self.flight = Flight.objects.create(**self.flight_data)
     
@@ -49,7 +51,9 @@ class FlightAPITest(APITestCase):
       origin="İstanbul",
       destination="Paris",
       scheduled_time=timezone.now() + timedelta(hours=4),
-      status="delayed"
+      status="delayed",
+      airline="Pegasus Airlines",
+      gate="A2"
     )
     
     self.departed_flight = Flight.objects.create(
@@ -57,7 +61,8 @@ class FlightAPITest(APITestCase):
       origin="İzmir",
       destination="Madrid",
       scheduled_time=timezone.now() - timedelta(hours=1),
-      status="departed"
+      status="departed",
+      airline="Turkish Airlines"
     )
 
   def _authenticate_user(self, user):
@@ -96,7 +101,8 @@ class FlightAPITest(APITestCase):
       "origin": "İzmir",
       "destination": "Madrid",
       "scheduled_time": (timezone.now() + timedelta(hours=6)).isoformat(),
-      "status": "planned"
+      "status": "planned",
+      "airline": "AnadoluJet"
     }
     response = self.client.post(url, new_flight, format='json')
     self.assertEqual(response.status_code, 201)
@@ -113,7 +119,9 @@ class FlightAPITest(APITestCase):
       "origin": "Antalya",
       "destination": "Rome",
       "scheduled_time": (timezone.now() + timedelta(hours=8)).isoformat(),
-      "status": "delayed"
+      "status": "delayed",
+      "airline": "AnadoluJet",
+      "gate": "A2"
     }
     response = self.client.post(url, new_flight, format='json')
     self.assertEqual(response.status_code, 201)
@@ -129,7 +137,8 @@ class FlightAPITest(APITestCase):
       "origin": "Ankara",
       "destination": "Vienna",
       "scheduled_time": (timezone.now() + timedelta(hours=3)).isoformat(),
-      "status": "planned"
+      "status": "planned",
+      "airline": "Turkish Airlines"
     }
     response = self.client.post(url, new_flight, format='json')
     # For now, all authenticated users can create flights
@@ -156,7 +165,9 @@ class FlightAPITest(APITestCase):
       "origin": "Ankara",
       "destination": "Berlin",
       "scheduled_time": self.flight.scheduled_time.isoformat(),
-      "status": "delayed"
+      "status": "delayed",
+      "airline": "Updated Airlines",
+      "gate": "A10"
     }
     response = self.client.put(url, update_data, format='json')
     self.assertEqual(response.status_code, 200)
@@ -210,6 +221,43 @@ class FlightAPITest(APITestCase):
     else:
       for item in response.data:
         self.assertEqual(item["destination"], "Paris")
+
+  def test_flight_filter_by_airline(self):
+    """Test filtering flights by airline"""
+    self._authenticate_user(self.viewer_user)
+    
+    url = reverse('flight-list')
+    response = self.client.get(url + "?airline=Turkish Airlines")
+    self.assertEqual(response.status_code, 200)
+
+    # Check that all returned flights have Turkish Airlines as airline
+    if 'results' in response.data:
+      for item in response.data["results"]:
+        self.assertEqual(item["airline"], "Turkish Airlines")
+    else:
+      for item in response.data:
+        self.assertEqual(item["airline"], "Turkish Airlines")
+
+  def test_flight_search_by_gate(self):
+    """Test searching flights by gate"""
+    self._authenticate_user(self.viewer_user)
+    
+    url = reverse('flight-list')
+    response = self.client.get(url + "?search=A1")
+    self.assertEqual(response.status_code, 200)
+    
+    # Should find our test flight with gate A1
+    if 'results' in response.data:
+      results = response.data["results"]
+    else:
+      results = response.data
+    
+    self.assertGreater(len(results), 0)
+    found_flight = next(
+      (f for f in results if f["gate"] == "A1"), 
+      None
+    )
+    self.assertIsNotNone(found_flight)
 
   def test_flight_search_by_flight_number(self):
     """Test searching flights by flight number"""
@@ -268,7 +316,9 @@ class FlightAPITest(APITestCase):
       origin="Test Origin",
       destination="Test Destination",
       scheduled_time=timezone.now() + timedelta(hours=1),
-      status="planned"
+      status="planned",
+      airline="Test Airline",
+      gate="T1"
     )
     
     url = reverse('flight-detail', kwargs={'pk': temp_flight.pk})
@@ -285,7 +335,8 @@ class FlightModelTest(APITestCase):
       origin="Test Origin",
       destination="Test Destination",
       scheduled_time=timezone.now() + timedelta(hours=2),
-      status="planned"
+      status="planned",
+      airline="Test Airline"
     )
     expected_str = f"TK1111 - Test Origin → Test Destination"
     self.assertEqual(str(flight), expected_str)
@@ -298,7 +349,9 @@ class FlightModelTest(APITestCase):
       origin="İstanbul",
       destination="London",
       scheduled_time=scheduled_time,
-      status="delayed"
+      status="delayed",
+      airline="Test Airline",
+      gate="T1"
     )
     
     self.assertEqual(flight.flight_number, "TK2222")
@@ -306,6 +359,8 @@ class FlightModelTest(APITestCase):
     self.assertEqual(flight.destination, "London")
     self.assertEqual(flight.scheduled_time, scheduled_time)
     self.assertEqual(flight.status, "delayed")
+    self.assertEqual(flight.airline, "Test Airline")
+    self.assertEqual(flight.gate, "T1")
     # Note: created_at and updated_at fields don't exist in the current model
 
   def test_flight_status_choices(self):
@@ -318,7 +373,8 @@ class FlightModelTest(APITestCase):
         origin="Test",
         destination="Test",
         scheduled_time=timezone.now() + timedelta(hours=1),
-        status=status
+        status=status,
+        airline="Test Airline"
       )
       self.assertEqual(flight.status, status)
 

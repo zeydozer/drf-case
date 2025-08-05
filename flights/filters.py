@@ -36,6 +36,10 @@ class FlightFilter(django_filters.FilterSet):
     label='Scheduled date'
   )
 
+  # Airline ve gate için partial matching
+  airline = django_filters.CharFilter(lookup_expr='icontains')
+  gate = django_filters.CharFilter(lookup_expr='icontains')
+
   class Meta:
     model = Flight
     fields = {
@@ -44,4 +48,6 @@ class FlightFilter(django_filters.FilterSet):
       'destination': ['exact', 'icontains'],
       'status': ['exact', 'in'],
       'scheduled_time': ['exact', 'gte', 'lte', 'range'],
+      'airline': ['exact', 'icontains'],
+      'gate': ['exact', 'icontains'],
     }

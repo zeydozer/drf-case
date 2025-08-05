@@ -600,3 +600,239 @@ LINE 1: ...", "users_user"."email", "users_user"."role" FROM "users_use...
 [2025-08-05 16:23:13,054] INFO flights.views - ✅ Cache'ten alındı.
 [2025-08-05 16:23:13,055] INFO drf_case.middleware - 📡 GET /api/flights/ from 172.18.0.8 took 0.06s
 [2025-08-05 16:23:23,061] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
+[2025-08-05 16:23:53,889] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.31s
+[2025-08-05 16:24:24,687] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 16:51:08,073] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.31s
+[2025-08-05 16:51:38,899] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.30s
+[2025-08-05 16:52:09,676] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
+[2025-08-05 16:52:40,500] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.31s
+[2025-08-05 16:53:11,293] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 16:53:42,085] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 16:54:12,593] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 16:54:17,656] INFO drf_case.middleware - 📡 POST /device.rsp from 172.18.0.8 took 0.01s
+[2025-08-05 16:54:17,657] WARNING django.request - Not Found: /device.rsp
+[2025-08-05 16:54:43,378] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 16:54:56,228] INFO drf_case.middleware - 📡 GET / from 172.18.0.8 took 0.00s
+[2025-08-05 16:55:14,166] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 16:55:44,952] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 16:55:54,481] INFO drf_case.middleware - 📡 GET / from 172.18.0.8 took 0.39s
+[2025-08-05 16:56:15,477] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 16:56:46,291] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 16:57:16,816] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 16:58:41,017] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.30s
+[2025-08-05 16:58:50,474] INFO drf_case.middleware - 📡 GET /health/ from 172.18.0.8 took 0.29s
+[2025-08-05 16:58:56,790] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 16:58:56,791] WARNING django.request - Unauthorized: /api/token/
+[2025-08-05 16:58:57,353] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.29s
+[2025-08-05 16:58:57,904] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 16:58:57,907] INFO drf_case.middleware - 📡 POST /api/token/refresh/ from 127.0.0.1 took 0.00s
+[2025-08-05 16:58:58,500] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.31s
+[2025-08-05 16:58:58,785] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.28s
+[2025-08-05 16:58:59,065] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.28s
+[2025-08-05 16:58:59,340] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.27s
+[2025-08-05 16:59:11,565] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 16:59:42,448] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.31s
+[2025-08-05 17:00:13,228] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:00:44,013] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:01:14,570] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:01:45,092] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:02:15,659] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:02:46,555] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.33s
+[2025-08-05 17:03:17,359] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:03:48,208] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.30s
+[2025-08-05 17:04:12,933] INFO drf_case.middleware - 📡 GET / from 172.18.0.8 took 0.27s
+[2025-08-05 17:04:19,013] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.29s
+[2025-08-05 17:04:49,589] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:05:20,416] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.29s
+[2025-08-05 17:08:43,837] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.31s
+[2025-08-05 17:09:14,666] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.29s
+[2025-08-05 17:09:45,456] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:13,092] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:13,093] WARNING django.request - Unauthorized: /api/token/
+[2025-08-05 17:10:13,648] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:10:14,190] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:14,194] INFO drf_case.middleware - 📡 POST /api/token/refresh/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:14,776] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.31s
+[2025-08-05 17:10:15,053] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:15,325] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:15,599] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:15,992] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:22,720] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:22,726] INFO flights.views - Yeni uçuş oluşturuldu: TK9999 - İzmir → Madrid
+[2025-08-05 17:10:22,729] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:10:23,814] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:23,818] INFO flights.views - Yeni uçuş oluşturuldu: TK8888 - Antalya → Rome
+[2025-08-05 17:10:23,820] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:24,925] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:24,930] INFO flights.views - Yeni uçuş oluşturuldu: TK7777 - Ankara → Vienna
+[2025-08-05 17:10:24,931] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:10:26,012] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:26,018] INFO flights.views - Uçuş silindi: TK0000 - Test Origin → Test Destination
+[2025-08-05 17:10:26,021] INFO drf_case.middleware - 📡 DELETE /api/flights/16/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:10:27,107] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:27,113] INFO drf_case.middleware - 📡 GET /api/flights/17/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:28,195] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:28,197] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:10:28,204] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:10:29,287] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:29,290] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:10:29,294] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:10:30,373] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:30,376] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:10:30,380] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:10:31,466] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:31,470] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-05 17:10:31,471] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:32,295] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:32,295] WARNING django.request - Unauthorized: /api/flights/
+[2025-08-05 17:10:33,391] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:33,394] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:10:33,399] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:10:34,483] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:10:34,524] INFO flights.views - Uçuş güncellendi: TK1234 - Ankara → Berlin
+[2025-08-05 17:10:34,526] INFO drf_case.middleware - 📡 PUT /api/flights/38/ from 127.0.0.1 took 0.04s
+[2025-08-05 17:10:35,646] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:35,655] INFO drf_case.middleware - 📡 GET /api/flights/41/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:36,809] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:36,813] INFO drf_case.middleware - 📡 POST /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:37,898] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:37,902] INFO drf_case.middleware - 📡 POST /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:38,987] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:38,993] INFO drf_case.middleware - 📡 DELETE /api/crew/11/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:40,093] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:40,099] INFO drf_case.middleware - 📡 GET /api/crew/12/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:41,215] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:10:41,221] INFO drf_case.middleware - 📡 GET /api/crew/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:10:42,344] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:10:42,350] INFO drf_case.middleware - 📡 GET /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:43,445] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:10:43,451] INFO drf_case.middleware - 📡 GET /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:44,271] INFO drf_case.middleware - 📡 GET /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:44,272] WARNING django.request - Unauthorized: /api/crew/
+[2025-08-05 17:10:45,378] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:10:45,382] INFO drf_case.middleware - 📡 POST /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:45,383] WARNING django.request - Bad Request: /api/crew/
+[2025-08-05 17:10:46,488] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:10:46,494] INFO drf_case.middleware - 📡 PUT /api/crew/24/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:10:46,529] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:11:17,095] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:11:47,884] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:12:18,732] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.30s
+[2025-08-05 17:12:41,097] INFO drf_case.middleware - 📡 GET / from 172.18.0.8 took 0.27s
+[2025-08-05 17:12:49,579] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.31s
+[2025-08-05 17:12:51,037] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:12:51,045] INFO flights.views - Yeni uçuş oluşturuldu: TK9999 - İzmir → Madrid
+[2025-08-05 17:12:51,047] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:12:52,127] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:12:52,132] INFO flights.views - Yeni uçuş oluşturuldu: TK8888 - Antalya → Rome
+[2025-08-05 17:12:52,133] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:12:53,208] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:12:53,212] INFO flights.views - Yeni uçuş oluşturuldu: TK7777 - Ankara → Vienna
+[2025-08-05 17:12:53,213] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:12:54,287] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:12:54,294] INFO flights.views - Uçuş silindi: TK0000 - Test Origin → Test Destination
+[2025-08-05 17:12:54,297] INFO drf_case.middleware - 📡 DELETE /api/flights/16/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:12:55,375] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:12:55,380] INFO drf_case.middleware - 📡 GET /api/flights/17/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:12:56,481] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:12:56,484] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:12:56,489] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:12:57,578] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:12:57,580] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:12:57,585] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:12:58,664] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:12:58,667] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:12:58,671] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:12:59,753] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:12:59,756] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:12:59,760] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:13:00,846] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:13:00,851] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-05 17:13:00,851] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:13:01,666] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:13:01,667] WARNING django.request - Unauthorized: /api/flights/
+[2025-08-05 17:13:02,743] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.26s
+[2025-08-05 17:13:02,745] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:13:02,750] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:13:03,831] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:13:03,871] INFO flights.views - Uçuş güncellendi: TK1234 - Ankara → Berlin
+[2025-08-05 17:13:03,872] INFO drf_case.middleware - 📡 PUT /api/flights/41/ from 127.0.0.1 took 0.04s
+[2025-08-05 17:13:04,949] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:13:04,956] INFO drf_case.middleware - 📡 GET /api/flights/44/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:13:17,458] INFO drf_case.middleware - 📡 GET / from 172.18.0.8 took 0.28s
+[2025-08-05 17:13:20,406] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.30s
+[2025-08-05 17:13:50,959] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:14:13,886] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:14:13,892] INFO flights.views - Yeni uçuş oluşturuldu: TK9999 - İzmir → Madrid
+[2025-08-05 17:14:13,894] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:14:14,973] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:14:14,978] INFO flights.views - Yeni uçuş oluşturuldu: TK8888 - Antalya → Rome
+[2025-08-05 17:14:14,979] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:14:16,062] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:14:16,067] INFO flights.views - Yeni uçuş oluşturuldu: TK7777 - Ankara → Vienna
+[2025-08-05 17:14:16,068] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:14:17,143] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.26s
+[2025-08-05 17:14:17,150] INFO flights.views - Uçuş silindi: TK0000 - Test Origin → Test Destination
+[2025-08-05 17:14:17,153] INFO drf_case.middleware - 📡 DELETE /api/flights/16/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:14:18,247] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.26s
+[2025-08-05 17:14:18,252] INFO drf_case.middleware - 📡 GET /api/flights/17/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:14:19,350] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:14:19,352] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:14:19,357] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:14:20,449] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:14:20,452] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:14:20,457] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:14:21,559] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:14:21,562] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:14:21,567] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:14:21,807] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.30s
+[2025-08-05 17:14:22,656] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:14:22,659] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:14:22,663] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:14:23,751] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:14:23,756] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-05 17:14:23,757] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:14:24,566] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:14:24,567] WARNING django.request - Unauthorized: /api/flights/
+[2025-08-05 17:14:25,684] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:14:25,687] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:14:25,692] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:14:26,797] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:14:26,800] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 17:14:26,805] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 17:14:27,885] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:14:27,928] INFO flights.views - Uçuş güncellendi: TK1234 - Ankara → Berlin
+[2025-08-05 17:14:27,929] INFO drf_case.middleware - 📡 PUT /api/flights/44/ from 127.0.0.1 took 0.04s
+[2025-08-05 17:14:29,018] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:14:29,025] INFO drf_case.middleware - 📡 GET /api/flights/47/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:14:52,598] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s
+[2025-08-05 17:15:23,111] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:15:53,879] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:16:24,379] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:16:24,811] INFO drf_case.middleware - 📡 POST /api/token/ from 172.18.0.8 took 0.29s
+[2025-08-05 17:16:24,870] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-05 17:16:24,871] INFO drf_case.middleware - 📡 GET /api/flights/ from 172.18.0.8 took 0.05s
+[2025-08-05 17:16:24,876] INFO flights.views - ✅ Cache'ten alındı.
+[2025-08-05 17:16:24,877] INFO drf_case.middleware - 📡 GET /api/flights/ from 172.18.0.8 took 0.00s
+[2025-08-05 17:16:55,128] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
+[2025-08-05 17:17:25,614] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:17:56,096] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:18:26,575] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:18:57,058] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:19:27,804] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
+[2025-08-05 17:19:58,544] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
+[2025-08-05 17:20:29,041] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:20:49,064] INFO drf_case.middleware - 📡 GET / from 172.18.0.8 took 0.27s
+[2025-08-05 17:20:59,517] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:21:30,001] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:22:00,756] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
+[2025-08-05 17:22:31,260] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:23:01,748] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:23:32,491] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
+[2025-08-05 17:24:03,271] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.29s
+[2025-08-05 17:24:34,012] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.25s
+[2025-08-05 17:25:04,541] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:25:35,042] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 17:26:05,843] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.30s
+[2025-08-05 17:26:36,591] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
+[2025-08-05 17:27:07,376] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.28s

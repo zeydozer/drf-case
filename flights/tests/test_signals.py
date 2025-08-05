@@ -13,7 +13,9 @@ class FlightSignalTest(TestCase):
       origin="İzmir",
       destination="Berlin",
       scheduled_time=timezone.now() + timedelta(hours=2),
-      status="planned"
+      status="planned",
+      airline="Turkish Airlines",
+      gate="A1"
     )
 
   @patch("notifications.tasks.send_flight_delay_notification.delay")
@@ -109,7 +111,9 @@ class FlightSignalTest(TestCase):
         origin="Ankara",
         destination="Paris",
         scheduled_time=timezone.now() + timedelta(hours=3),
-        status="delayed"
+        status="delayed",
+        airline="Test Airline",
+        gate="T1"
       )
       
       # Current signal implementation might not trigger on creation
@@ -173,7 +177,9 @@ class FlightSignalTest(TestCase):
         origin="Ankara",
         destination="Paris",
         scheduled_time=timezone.now() + timedelta(hours=3),
-        status="delayed"
+        status="delayed",
+        airline="Test Airline",
+        gate="T1"
       )
       
       # Current signal implementation might not trigger on creation

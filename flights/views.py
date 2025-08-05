@@ -41,7 +41,9 @@ class FlightViewSet(viewsets.ModelViewSet):
     'flight_number', 
     'origin', 
     'destination', 
-    'status'
+    'status',
+    'airline',
+    'gate',
   ]
   ordering = ['-scheduled_time']  # Varsayılan sıralama (en yeni tarih önce)
   
@@ -49,7 +51,9 @@ class FlightViewSet(viewsets.ModelViewSet):
   search_fields = [
     'flight_number', 
     'origin', 
-    'destination'
+    'destination',
+    'airline',
+    'gate'
   ]
 
   def get_permissions(self):
@@ -91,9 +95,11 @@ class FlightViewSet(viewsets.ModelViewSet):
                       request.query_params.get('scheduled_time_before') or
                       request.query_params.get('scheduled_date') or
                       request.query_params.get('search') or
-                      request.query_params.get('ordering'))
-    
-    has_pagination = bool(request.query_params.get('page') or 
+                      request.query_params.get('ordering') or
+                      request.query_params.get('airline') or
+                      request.query_params.get('gate'))
+
+    has_pagination = bool(request.query_params.get('page') or
                          request.query_params.get('page_size'))
     
     # Eğer herhangi bir filtre, arama veya sayfalama parametresi varsa cache kullanma

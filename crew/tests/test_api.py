@@ -39,7 +39,9 @@ class CrewAPITest(APITestCase):
       origin="İstanbul",
       destination="Roma",
       scheduled_time=timezone.now() + timedelta(hours=2),
-      status="planned"
+      status="planned",
+      airline="Turkish Airlines",
+      gate="A1"
     )
     
     self.flight2 = Flight.objects.create(
@@ -47,7 +49,9 @@ class CrewAPITest(APITestCase):
       origin="Ankara",
       destination="Paris",
       scheduled_time=timezone.now() + timedelta(hours=5),
-      status="delayed"
+      status="delayed",
+      airline="Turkish Airlines",
+      gate="A2"
     )
 
     # Create test crew members
@@ -204,7 +208,9 @@ class CrewModelTest(APITestCase):
       origin="İzmir",
       destination="Berlin",
       scheduled_time=timezone.now() + timedelta(hours=3),
-      status="planned"
+      status="planned",
+      airline="Turkish Airlines",
+      gate="A1"
     )
 
   def test_crew_member_str_method(self):

@@ -49,5 +49,9 @@ HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
 RUN chmod -R 755 /app/logs && \
     chown -R app:app /app/logs
 
+# Migrasyonları çalıştır
+RUN python manage.py makemigrations && \
+    python manage.py migrate
+
 # Gunicorn ile çalıştır
 CMD ["gunicorn", "--config", "gunicorn.conf.py", "drf_case.wsgi:application"]
