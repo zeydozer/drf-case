@@ -1,9 +1,22 @@
 from rest_framework.test import APITestCase
 from django.urls import reverse
 from flights.models import Flight
+from users.models import User
 
 class FlightAPITest(APITestCase):
     def setUp(self):
+        self.user = User.objects.create_user(username="testuser", password="secret123")
+        self.client.login(username="testuser", password="secret123")
+
+        token_url = reverse('token_obtain_pair')
+        response = self.client.post(token_url, {
+            "username": "testuser",
+            "password": "secret123"
+        }, format='json')
+        access_token = response.data["access"]
+
+        self.client.credentials(HTTP_AUTHORIZATION='Bearer ' + access_token)
+
         self.flight_data = {
             "flight_number": "TK1234",
             "origin": "Ankara",

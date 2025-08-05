@@ -2,3 +2,23 @@
 [2025-08-05 12:16:24,535] WARNING django.request - Not Found: /login.rsp
 [2025-08-05 12:16:49,112] WARNING django.request - Unauthorized: /api/token/
 [2025-08-05 12:28:25,500] WARNING django.request - Unauthorized: /api/token/
+[2025-08-05 12:30:18,716] WARNING django.request - Not Found: /dispatch.asp
+[2025-08-05 12:34:29,731] WARNING django.request - Unauthorized: /api/crew/
+[2025-08-05 12:34:29,744] WARNING django.request - Unauthorized: /api/crew/
+[2025-08-05 12:35:55,278] WARNING django.request - Not Found: /GponForm/diag_Form
+[2025-08-05 12:37:54,086] INFO flights.views - Yeni uçuş oluşturuldu: TK9999 - İzmir → Madrid
+[2025-08-05 12:37:54,914] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 12:37:55,727] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-05 12:38:19,857] INFO flights.views - Yeni uçuş oluşturuldu: TK9999 - İzmir → Madrid
+[2025-08-05 12:38:20,667] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 12:38:21,476] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-05 12:38:35,656] INFO flights.views - Yeni uçuş oluşturuldu: TK9999 - İzmir → Madrid
+[2025-08-05 12:38:36,474] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 12:38:37,305] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-05 12:39:35,420] INFO flights.views - Yeni uçuş oluşturuldu: TK9999 - İzmir → Madrid
+[2025-08-05 12:39:36,232] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 12:39:37,047] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-05 12:39:49,441] INFO flights.views - Yeni uçuş oluşturuldu: TK9999 - İzmir → Madrid
+[2025-08-05 12:39:50,253] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 12:39:51,084] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-05 12:40:02,958] WARNING django.request - Unauthorized: /api/token/

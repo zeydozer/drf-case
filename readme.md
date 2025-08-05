@@ -2,6 +2,7 @@
 
 Django REST Framework kullanılarak geliştirilmiş basit bir uçuş yönetim sistemi.
 
+
 ## Özellikler
 
 - **Uçuş Yönetimi**: Uçuş bilgilerini görüntüleme, oluşturma ve güncelleme
@@ -12,13 +13,17 @@ Django REST Framework kullanılarak geliştirilmiş basit bir uçuş yönetim si
 - **Mürettebat Yönetimi**: Pilot, co-pilot ve kabin görevlilerinin uçuşlara atanması
 - **Bildirim Sistemi**: Celery ile asenkron uçuş gecikme bildirimleri
 - **REST API**: Django REST Framework ile tam API desteği
+- **JWT Authentication**: Güvenli token tabanlı kimlik doğrulama (djangorestframework-simplejwt)
+- **Signal Desteği**: Kullanıcı ve uçuş işlemlerinde otomatik tetiklenen Django signal mekanizması
 - **Docker Desteği**: Geliştirme ve production ortamları için Docker konfigürasyonu
+
 
 ## Teknolojiler
 
 - Django 5.2.4
 - Django REST Framework
 - Django Filters (Filtreleme desteği)
+- Django Simple JWT (Authentication)
 - Celery (Asenkron görevler)
 - PostgreSQL (Production) / SQLite (Development)
 - Redis (Celery broker ve Cache)
@@ -134,12 +139,15 @@ GET /api/flights/?origin=Antalya&status=departed&page=1&ordering=-scheduled_time
 - `/api/crew/` - Mürettebat listesi ve oluşturma
 - `/admin/` - Django admin paneli
 
+
 ## Proje Yapısı
 
 - `flights/` - Uçuş modeli, API'leri ve filtreleme sistemi
 - `flights/filters.py` - Django Filters ile filtreleme tanımları
 - `flights/views.py` - ViewSet'ler, sayfalama ve cache yönetimi
-- `crew/` - Mürettebat modeli ve API'leri  
+- `flights/signals.py` - Uçuşlar için signal tanımları
+- `crew/` - Mürettebat modeli ve API'leri
+- `users/signals.py` - Kullanıcı işlemleri için signal tanımları
 - `notifications/` - Celery görevleri
 - `drf_case/` - Ana proje ayarları
 
