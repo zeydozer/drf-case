@@ -168,19 +168,19 @@ class FlightSignalTest(TestCase):
   def test_flight_creation_with_delayed_status(self):
     """Test creating a flight with delayed status from the start"""
     with patch("notifications.tasks.send_flight_delay_notification.delay") as mock_task:
-    delayed_flight = Flight.objects.create(
-      flight_number="TK9999",
-      origin="Ankara",
-      destination="Paris",
-      scheduled_time=timezone.now() + timedelta(hours=3),
-      status="delayed"
-    )
-    
-    # Current signal implementation might not trigger on creation
-    # Only check if notification was called, don't enforce it
-    # This test documents the current behavior
-    if mock_task.called:
-      mock_task.assert_called_with(delayed_flight.pk, delayed_flight.flight_number)
-    else:
-      # Signal only triggers on update, not creation
-      pass
+      delayed_flight = Flight.objects.create(
+        flight_number="TK9999",
+        origin="Ankara",
+        destination="Paris",
+        scheduled_time=timezone.now() + timedelta(hours=3),
+        status="delayed"
+      )
+      
+      # Current signal implementation might not trigger on creation
+      # Only check if notification was called, don't enforce it
+      # This test documents the current behavior
+      if mock_task.called:
+        mock_task.assert_called_with(delayed_flight.pk, delayed_flight.flight_number)
+      else:
+        # Signal only triggers on update, not creation
+        pass
