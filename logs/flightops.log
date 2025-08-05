@@ -1,42 +1,4 @@
-[2025-08-05 11:22:21,376] ERROR django.security.DisallowedHost - Invalid HTTP_HOST header: '85.105.169.85'. You may need to add '85.105.169.85' to ALLOWED_HOSTS.
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
-    response = self.process_request(request)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
-    host = request.get_host()
-           ^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
-    raise DisallowedHost(msg)
-django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '85.105.169.85'. You may need to add '85.105.169.85' to ALLOWED_HOSTS.
-[2025-08-05 11:22:49,478] ERROR django.security.DisallowedHost - Invalid HTTP_HOST header: '85.105.169.85'. You may need to add '85.105.169.85' to ALLOWED_HOSTS.
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
-    response = self.process_request(request)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
-    host = request.get_host()
-           ^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
-    raise DisallowedHost(msg)
-django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '85.105.169.85'. You may need to add '85.105.169.85' to ALLOWED_HOSTS.
-[2025-08-05 11:23:32,109] ERROR django.security.DisallowedHost - Invalid HTTP_HOST header: '85.105.169.85'. You may need to add '85.105.169.85' to ALLOWED_HOSTS.
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 119, in __call__
-    response = self.process_request(request)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
-    host = request.get_host()
-           ^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 202, in get_host
-    raise DisallowedHost(msg)
-django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '85.105.169.85'. You may need to add '85.105.169.85' to ALLOWED_HOSTS.
+[2025-08-05 12:15:51,932] WARNING django.request - Unauthorized: /api/flights/
+[2025-08-05 12:16:24,535] WARNING django.request - Not Found: /login.rsp
+[2025-08-05 12:16:49,112] WARNING django.request - Unauthorized: /api/token/
+[2025-08-05 12:28:25,500] WARNING django.request - Unauthorized: /api/token/

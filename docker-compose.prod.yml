@@ -39,17 +39,13 @@ services:
       context: .
       dockerfile: Dockerfile.prod
     volumes:
+      - .:/app
       - static_volume:/app/staticfiles
       - media_volume:/app/media
-      - ./logs:/app/logs
     env_file:
       - .env.prod
     environment:
-      - DEBUG=${DEBUG_E:-0}
       - DATABASE_URL=postgresql://${POSTGRES_USER:-flightops_user}:${POSTGRES_PASSWORD:-flightops_pass}@db:5432/${POSTGRES_DB:-flightops_db}
-      - CELERY_BROKER_URL=${CELERY_BROKER_URL_E:-redis://redis:6379/0}
-      - CELERY_RESULT_BACKEND=${CELERY_RESULT_BACKEND_E:-redis://redis:6379/0}
-      - SECRET_KEY=${SECRET_KEY_E:-django-insecure-fallback-key-change-this}
     depends_on:
       db:
         condition: service_healthy
@@ -101,11 +97,7 @@ services:
     env_file:
       - .env.prod
     environment:
-      - DEBUG=0
       - DATABASE_URL=postgresql://${POSTGRES_USER:-flightops_user}:${POSTGRES_PASSWORD:-flightops_pass}@db:5432/${POSTGRES_DB:-flightops_db}
-      - CELERY_BROKER_URL=redis://redis:6379/0
-      - CELERY_RESULT_BACKEND=redis://redis:6379/0
-      - SECRET_KEY=${SECRET_KEY:-django-insecure-fallback-key-change-this}
     depends_on:
       - db
       - redis
@@ -124,11 +116,7 @@ services:
     env_file:
       - .env.prod
     environment:
-      - DEBUG=0
-      - DATABASE_URL=postgresql://${POSTGRES_USER:-flightops_user}:${POSTGRES_PASSWORD:-flightops_pass}@db:5432/${POSTGRES_DB:-flightops_db}
-      - CELERY_BROKER_URL=redis://redis:6379/0
-      - CELERY_RESULT_BACKEND=redis://redis:6379/0
-      - SECRET_KEY=${SECRET_KEY:-django-insecure-fallback-key-change-this}
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-flightops_user}:${POSTGRES_PASSWORD:-flightops_pass}@db:5432/${POSTGRES_DB:-flightops_db}      
     depends_on:
       - db
       - redis

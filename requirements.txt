@@ -13,3 +13,4 @@ requests==2.31.0
 django-redis==5.4.0
 django-filter==24.3
 gunicorn==21.2.0
+djangorestframework-simplejwt==5.5.1
