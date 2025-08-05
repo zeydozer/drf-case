@@ -65,16 +65,16 @@ ROOT_URLCONF = 'drf_case.urls'
 
 TEMPLATES = [
   {
-  'BACKEND': 'django.template.backends.django.DjangoTemplates',
-  'DIRS': [],
-  'APP_DIRS': True,
-  'OPTIONS': {
-    'context_processors': [
-      'django.template.context_processors.request',
-      'django.contrib.auth.context_processors.auth',
-      'django.contrib.messages.context_processors.messages',
-    ],
-  },
+    'BACKEND': 'django.template.backends.django.DjangoTemplates',
+    'DIRS': [],
+    'APP_DIRS': True,
+    'OPTIONS': {
+      'context_processors': [
+        'django.template.context_processors.request',
+        'django.contrib.auth.context_processors.auth',
+        'django.contrib.messages.context_processors.messages',
+      ],
+    },
   },
 ]
 
@@ -87,9 +87,9 @@ WSGI_APPLICATION = 'drf_case.wsgi.application'
 # PostgreSQL veritabanı konfigürasyonu (Docker için)
 DATABASES = {
   'default': dj_database_url.config(
-  default='sqlite:///' + str(BASE_DIR / 'db.sqlite3'),
-  conn_max_age=600,
-  conn_health_checks=True,
+    default='sqlite:///' + str(BASE_DIR / 'db.sqlite3'),
+    conn_max_age=600,
+    conn_health_checks=True,
   )
 }
 
@@ -99,16 +99,16 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
   {
-  'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+    'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
   },
   {
-  'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
   },
   {
-  'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
   },
   {
-  'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
   },
 ]
 
@@ -143,11 +143,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Cache Configuration (Redis)
 CACHES = {
   'default': {
-  'BACKEND': 'django_redis.cache.RedisCache',
-  'LOCATION': os.getenv('CELERY_BROKER_URL', 'redis://127.0.0.1:6379/1'),
-  'OPTIONS': {
-    'CLIENT_CLASS': 'django_redis.client.DefaultClient',
-  }
+    'BACKEND': 'django_redis.cache.RedisCache',
+    'LOCATION': os.getenv('CELERY_BROKER_URL', 'redis://127.0.0.1:6379/1'),
+    'OPTIONS': {
+      'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+    }
   }
 }
 
@@ -167,8 +167,8 @@ logging.basicConfig(
   level=logging.INFO,
   format='[%(asctime)s] %(levelname)s %(name)s - %(message)s',
   handlers=[
-  logging.StreamHandler(),
-  logging.FileHandler('/app/logs/flightops.log')
+    logging.StreamHandler(),
+    logging.FileHandler('/app/logs/flightops.log')
   ]
 )
 
@@ -176,16 +176,16 @@ REST_FRAMEWORK = {
   'PAGE_SIZE': 5,
   'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
   'DEFAULT_RENDERER_CLASSES': [
-  'rest_framework.renderers.JSONRenderer'
+    'rest_framework.renderers.JSONRenderer'
   ],
   'DEFAULT_FILTER_BACKENDS': [
-  'django_filters.rest_framework.DjangoFilterBackend'
+    'django_filters.rest_framework.DjangoFilterBackend'
   ],
   'DEFAULT_AUTHENTICATION_CLASSES': [
-  'rest_framework_simplejwt.authentication.JWTAuthentication',
+    'rest_framework_simplejwt.authentication.JWTAuthentication',
   ],
   'DEFAULT_PERMISSION_CLASSES': [
-  'rest_framework.permissions.IsAuthenticated',
+    'rest_framework.permissions.IsAuthenticated',
   ]
 }
 

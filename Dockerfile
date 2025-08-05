@@ -1,5 +1,4 @@
-# Python 3.12 tabanlı resmi image kullan (3.13 ile psycopg2 uyumlu değil)
-FROM python:3.12-slim
+FROM python:3.12-slim AS base
 
 # Sistem güncellemeleri ve gerekli paketler
 RUN apt-get update && apt-get install -y \
@@ -9,32 +8,50 @@ RUN apt-get update && apt-get install -y \
     libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Çalışma dizinini ayarla
-WORKDIR /app
-
-# Python buffering'i kapat (log'lar için)
+# Python ortam değişkenleri
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
+ENV PIP_NO_CACHE_DIR=1
+ENV PIP_DISABLE_PIP_VERSION_CHECK=1
+
+# Çalışma dizinini ayarla
+WORKDIR /app
 
 # Requirements dosyasını kopyala ve yükle
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Gunicorn'u yükle
+RUN pip install gunicorn
+
+# Non-root user oluştur
+RUN useradd --create-home --shell /bin/bash app && \
+    mkdir -p /app/staticfiles /app/media && \
+    chown -R app:app /app
+
 # Proje dosyalarını kopyala
-COPY . .
+COPY --chown=app:app . .
 
-# Static dosyalar dizinini oluştur
-RUN mkdir -p /app/staticfiles
-
-# Migration'ları çalıştır ve static dosyaları topla
+# Static dosyaları topla
 RUN python manage.py collectstatic --noinput
+
+# User switch
+USER app
 
 # Port 8000'i aç
 EXPOSE 8000
 
 # Health check ekle
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
-    CMD python -c "import requests; requests.get('http://localhost:8000/api/flights/', timeout=10)" || exit 1
+    CMD python -c "import requests; requests.get('http://localhost:8000/health/', timeout=10)" || exit 1
 
-# Django development server'ı başlat
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Veritabanı migrasyonlarını ve başlangıç verilerini yükle
+RUN python manage.py migrate && \
+    python manage.py seed_all_data
+
+# Log izinleri ayarla
+RUN chmod -R 755 /app/logs && \
+    chown -R app:app /app/logs
+
+# Gunicorn ile çalıştır
+CMD ["gunicorn", "--config", "gunicorn.conf.py", "drf_case.wsgi:application"]

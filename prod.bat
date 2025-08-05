@@ -1,33 +1,42 @@
 @echo off
 REM Production deployment batch file for Windows
 
+REM Usage: prod.bat <command> [environment]
+if "%2"=="prod" (
+  echo Using production configuration...
+  set CONFIG_FILE=docker-compose.prod.yml
+) else (
+  echo Using development configuration...
+  set CONFIG_FILE=docker-compose.yml
+)
+
 if "%1"=="up" (
   echo Starting production services...
-  docker-compose -f docker-compose.prod.yml up --build -d
+  docker-compose -f %CONFIG_FILE% up --build -d
   goto :eof
 )
 
 if "%1"=="down" (
   echo Stopping production services...
-  docker-compose -f docker-compose.prod.yml down -v
+  docker-compose -f %CONFIG_FILE% down -v
   goto :eof
 )
 
 if "%1"=="logs" (
   echo Showing production logs...
-  docker-compose -f docker-compose.prod.yml logs -f
+  docker-compose -f %CONFIG_FILE% logs -f
   goto :eof
 )
 
 if "%1"=="restart" (
   echo Restarting web and nginx services...
-  docker-compose -f docker-compose.prod.yml restart
+  docker-compose -f %CONFIG_FILE% restart
   goto :eof
 )
 
 if "%1"=="status" (
   echo Checking service status...
-  docker-compose -f docker-compose.prod.yml ps
+  docker-compose -f %CONFIG_FILE% ps
   goto :eof
 )
 
