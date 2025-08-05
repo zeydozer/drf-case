@@ -22,3 +22,21 @@
 [2025-08-05 12:39:50,253] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
 [2025-08-05 12:39:51,084] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
 [2025-08-05 12:40:02,958] WARNING django.request - Unauthorized: /api/token/
+[2025-08-05 12:42:01,029] WARNING django.request - Not Found: /device.rsp
+[2025-08-05 12:44:43,405] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.28s
+[2025-08-05 12:44:43,411] INFO drf_case.middleware - 📡 POST /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 12:44:44,241] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 12:44:44,248] INFO drf_case.middleware - 📡 GET /api/crew/ from 127.0.0.1 took 0.00s
+[2025-08-05 12:44:54,146] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 12:44:54,153] INFO flights.views - Yeni uçuş oluşturuldu: TK9999 - İzmir → Madrid
+[2025-08-05 12:44:54,156] INFO drf_case.middleware - 📡 POST /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 12:44:54,953] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.26s
+[2025-08-05 12:44:54,956] INFO flights.views - 🔍 Filtreleme/sayfalama var, doğrudan DB'den çekiliyor
+[2025-08-05 12:44:54,961] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.01s
+[2025-08-05 12:44:55,776] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.27s
+[2025-08-05 12:44:55,781] INFO flights.views - 📦 DB'den alındı ve cache'e yazıldı.
+[2025-08-05 12:44:55,782] INFO drf_case.middleware - 📡 GET /api/flights/ from 127.0.0.1 took 0.00s
+[2025-08-05 12:45:02,822] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.30s
+[2025-08-05 12:45:02,824] WARNING django.request - Unauthorized: /api/token/
+[2025-08-05 12:45:03,456] INFO drf_case.middleware - 📡 POST /api/token/ from 127.0.0.1 took 0.36s
+[2025-08-05 12:45:03,762] INFO drf_case.middleware - 📡 POST /api/users/register/ from 127.0.0.1 took 0.30s
