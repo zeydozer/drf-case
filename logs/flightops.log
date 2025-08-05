@@ -582,3 +582,5 @@ LINE 1: ...", "users_user"."email", "users_user"."role" FROM "users_use...
 [2025-08-05 16:09:45,583] INFO drf_case.middleware - 📡 GET /api/flights/ from 172.18.0.7 took 0.00s
 [2025-08-05 16:10:03,777] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.27s
 [2025-08-05 16:10:34,276] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 16:11:04,799] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.00s
+[2025-08-05 16:11:35,552] INFO drf_case.middleware - 📡 GET /health/ from 127.0.0.1 took 0.26s
