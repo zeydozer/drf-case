@@ -128,7 +128,7 @@ class FlightAPITest(APITestCase):
     self.assertEqual(response.data["status"], "delayed")
 
   def test_flight_create_as_viewer(self):
-    """Test flight creation by viewer user (should be allowed for now)"""
+    """Test flight creation by viewer user (should not be allowed for now)"""
     self._authenticate_user(self.viewer_user)
     
     url = reverse('flight-list')
@@ -141,8 +141,7 @@ class FlightAPITest(APITestCase):
       "airline": "Turkish Airlines"
     }
     response = self.client.post(url, new_flight, format='json')
-    # For now, all authenticated users can create flights
-    self.assertEqual(response.status_code, 201)
+    self.assertEqual(response.status_code, 403)
 
   def test_flight_detail_view(self):
     """Test flight detail view"""

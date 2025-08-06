@@ -1,13 +1,14 @@
 from rest_framework import viewsets
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny, SAFE_METHODS
 from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import OrderingFilter, SearchFilter
+from django.core.cache import cache
+from rest_framework.response import Response
 from .models import Flight
 from .serializers import FlightSerializer
 from .filters import FlightFilter
-from django.core.cache import cache
-from rest_framework.response import Response
+from .permissions import IsStaffOrAdmin
 import logging
 
 logger = logging.getLogger(__name__)
@@ -57,15 +58,9 @@ class FlightViewSet(viewsets.ModelViewSet):
   ]
 
   def get_permissions(self):
-    """Define permissions based on action and user role"""
-    if self.action in ['create', 'update', 'partial_update', 'destroy']:
-      # Only allow authenticated users (role-based filtering can be added later)
-      permission_classes = [IsAuthenticated]
-    else:
-      # All authenticated users can view flight data
-      permission_classes = [IsAuthenticated]
-    
-    return [permission() for permission in permission_classes]
+    if self.request.method in SAFE_METHODS:
+      return [IsAuthenticated()]
+    return [IsAuthenticated(), IsStaffOrAdmin()]
 
   def perform_create(self, serializer):
     instance = serializer.save()
